@@ -26,53 +26,167 @@
      crossorigin="anonymous">
 </head>
 <body background="./imagenes/fondo.jpg">
-    <div class="position-absolute top-50 start-50 translate-middle"><p>.</p><br><br><br></div>
-    <div class =" tablea bordeg responsive position-absolute top-50 start-50 translate-middle" style="background-color:white;">
-        <br>
-        <div class="mb-3 tablea responsive">
-            <form>
-                <br><br><br><br><br><br><br><br>
-                <br><br><br><br><br><br><br><br>
-              <h2 class="text-uppercase text-center mb-5">Crea una cuenta</h2>
-                <div class="form-outline mb-4">
-                  <label class="form-label" for="name">Nombres</label>
-                  <input type="text" id="name" class="form-control form-control-lg" />
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand me-2" href="inicio.html">
+      <img src="./imagenes/cocoa.png" width="50" height="50" /> </a>   
+      <a class="navbar-brand me-2" href="inicio.html">
+        <h1>ACOCOA</h1>
+     </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarButtonsExample"
+        aria-controls="navbarButtonsExample"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarButtonsExample">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">casa elba</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br> <br> <br> <br>
+    <div class =" tablea bordeg container fluid " style="background-color:white;">
+        <div class="tablea responsive">
+              <!--<form class="col-md-6">
+                //<div><h2 class="text-uppercase text-center mb-5">Crea una cuenta</h2></div>
+                <div class="col-md-12">
+                <label class="form-label" for="name">Nombres</label>
+                  <input type="text" id="name" class="form-control " placeholder="Ingresa tu nombre"/>
                 </div>
-                <div class="form-outline mb-4">
+                <div class="col-md-12">
                   <label class="form-label" for="apellidos">Apellidos</label>
-                  <input type="text" id="apellidos" class="form-control form-control-lg" />
+                  <input type="text" id="apellidos" class="form-control" placeholder="Ingresa tu apellido"/>
                 </div>
-                <div class="form-outline mb-4">
-                    <label class="form-label" for="email">Email</label>
-                    <input type="email" id="email" class="form-control form-control-lg" />
-                  </div>
-                <div class="form-outline mb-4">
-                    <label class="form-label" for="clave">Contraseña</label>
-                    <input type="password" id="clave" class="form-control form-control-lg" />
+                <div class="col-md-12">
+                  <label for="Email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="Email" placeholder="Ingresa tu correo">
                 </div>
-                <div class="form-outline mb-4">
-                    <label class="form-label" for="clave2">Repita la Contraseña</label>
-                    <input type="password" id="clave2" class="form-control form-control-lg" />
+                <div class="col-12">
+                  <label for="clave1" class="form-label">Clave</label>
+                  <input type="password" class="form-control" id="clave1" placeholder="Ingresa tu clave">
                 </div>
-                <div class="form-outline mb-4">
-                    <label class="form-label" for="codigo">Codigo de Casa-Elba</label>
-                    <input type="number" id="codigo" class="form-control form-control-lg" />
+                <div class="col-12">
+                  <label for="clave2" class="form-label">Confirma</label>
+                  <input type="password" class="form-control" id="clave2" placeholder="Ingresa tu clave">
                 </div>
-                <div class="form-check d-flex justify-content-center mb-5">
+                <div class="col-md-6">
+                  <label for="elba" class="form-label">Codigo elba</label>
+                  <input type="text" class="form-control" id="elba" placeholder="Ingresa tu elba">
+                </div>
+                <div class="col-12">
                   <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
                   <label class="form-check-label" for="form2Example3g">
                     Estoy de acuerdo con todos los <a href="#!" class="text-body"><u>Terminos y condiciones</u></a>
                   </label>
                 </div>
-                <div class="d-flex justify-content-center">
+                <div class="col-12">
                   <button type="button"
                     class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Registrar</button>
                 </div>
-                <p class="text-center text-muted mt-5 mb-0">¿Tienes cuenta? <a href="ingreso.html"
-                    class="fw-bold text-body"><u>Ingresa</u></a></p>
-              </form>
+                <div class="col-12">
+                <p class="text-center text-muted mt-5 mb-0">¿Tienes cuenta? <a href="ingreso.html" class="fw-bold text-body">Ingresa</a></p></div>
+              </form>-->
+
+              <form class="row g-3">
+                <div><br><h2 class="text-uppercase text-center mb-5">Registrate</h2></div>
+                <div class="col-md-6">
+                  <label for="name" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="name">
+                </div>
+                <div class="col-md-6">
+                  <label for="apellido" class="form-label">Apellido</label>
+                  <input type="text" class="form-control" id="apellido">
+                </div>
+                <div class="col-md-6">
+                  <label for="Email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="Email">
+                </div>
+                <div class="col-md-6">
+                  <label for="ciudad" class="form-label">Codigo de Casa Elba</label>
+                  <input type="text" class="form-control" id="ciudad">
+                </div>
+                <div class="col-12">
+                  <label for="clave" class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" id="clave">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress2" class="form-label">Confirma tu contraseña</label>
+                  <input type="text" class="form-control" id="inputAddress2">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label">Codigo de Casa Elba</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                  <label for="ciudad" class="form-label">Ciudad</label>
+                  <select id="ciudad" class="form-select">
+                    <option value="">-</option>
+                  <option value="Arauca">Arauca</option>
+                  <option value="Armenia">Armenia</option>
+                  <option value="Barranquilla">Barranquilla</option>
+                  <option value="Bogotá">Bogotá</option>
+                  <option value="Bucaramanga">Bucaramanga</option>
+                  <option value="Cali">Cali</option>
+                  <option value="Cartagena">Cartagena</option>
+                  <option value="Cúcuta">Cúcuta</option>
+                  <option value="Florencia">Florencia</option>
+                  <option value="Ibagué">Ibagué</option>
+                  <option value="Leticia">Leticia</option>
+                  <option value="Manizales">Manizales</option>
+                  <option value="Medellín">Medellín</option>
+                  <option value="Mitú">Mitú</option>
+                  <option value="Mocoa">Mocoa</option>
+                  <option value="Montería">Montería</option>
+                  <option value="Neiva">Neiva</option>
+                  <option value="Pasto">Pasto</option>
+                  <option value="Pereira">Pereira</option>
+                  <option value="Popayán">Popayán</option>
+                  <option value="Puerto Carreño">Puerto Carreño</option>
+                  <option value="Puerto Inírida">Puerto Inírida</option>
+                  <option value="Quibdó">Quibdó</option>
+                  <option value="Riohacha">Riohacha</option>
+                  <option value="San Andrés">San Andrés</option>
+                  <option value="San José del Guaviare">San José del Guaviare</option>
+                  <option value="Santa Marta">Santa Marta</option>
+                  <option value="Sincelejo">Sincelejo</option>
+                  <option value="Tunja">Tunja</option>
+                  <option value="Valledupar">Valledupar</option>
+                  <option value="Villavicencio">Villavicencio</option>
+                  <option value="Yopal">Yopal</option>
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <label for="inputZip" class="form-label">Zip</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Terminos y condiciones
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary" style="align-items: center;">Registrar</button>
+                </div>
+                <div class="col-12">
+                  <p class="text-center">¿Tienes cuenta? <a href="ingreso.html" class="fw-bold text-body">Ingresa</a></p></div>
+                <div class="col-12"></div>
+                </form>
+        </div>
         </div>
     </div>
+    <div><p>...</p></div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
     crossorigin="anonymous"></script> 
